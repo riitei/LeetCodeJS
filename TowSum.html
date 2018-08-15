@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+
+    var twoSum = function (nums, target) {
+        // 計算array索引值
+        for (var i = 0; i < nums.length; i++) {
+            for (var j = 0; j < i; j++) {
+                if (nums[i] + nums[j] == target) {
+                    return [i, j];
+                    break;
+                }
+            }
+        }
+    };
+
+
+    nums = [2, 7, 11, 15];
+    var ans = twoSum(nums, 9);
+    console.log(ans[0]);
+    console.log(ans[1]);
+
+</script>
+
+</body>
+</html>
